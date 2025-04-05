@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Garamond, cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: darkgrey;
+            color: #000000;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            width: 100%;  /* Make the container span the full width of the screen */
+        }
+        .logo marquee {
+            font-size: 30px; /* You can adjust the font size here */
+            font-weight: bold;
+            width: 100%;  /* Set marquee width to 100% of the container */
+            white-space: nowrap;  /* Prevent text from wrapping and ensure continuous scrolling */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Adjusting the marquee speed and making the text scroll longer -->
+        <div class="logo">
+            <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="50">
+                Ancient Diddlers - Your one-stop destination for videos and audio! Enjoy the fun and entertainment as we bring you unique content every week!
+            </marquee>
+        </div>
+    </header>
+</body>
+</html>

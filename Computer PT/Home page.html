@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home </title>
+    <title>Home</title>
     <style>
         body {
             font-family: Garamond, cursive;
@@ -25,7 +25,6 @@
             margin: 20px auto;
             text-align: center;
         }
-
         th, td {
             border: 1px solid black;
             padding: 10px;
@@ -34,64 +33,11 @@
             font-size: 24px;
             font-weight: bold;
         }
-        .search-bar {
-            flex-grow: 1;
-            margin: 0 20px;
+        .nav-bar {
             display: flex;
-        }
-        .search-bar input {
-            width: 100%;
-            padding: 10px;
-            border: none;
-            border-radius: 3px;
-            font-size: 16px;
-        }
-        .search-bar button {
-            background: #ddd;
-            border: none;
-            padding: 10px 15px;
-            cursor: pointer;
-            border-radius: 3px;
-        }
-        .video-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 20px;
             justify-content: center;
-        }
-        .video-card {
-            width: 300px;
-            background: #fff;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        .video-card iframe {
-            width: 100%;
-            height: 170px;
-        }
-        .video-card p {
-            padding: 10px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-        footer {
+            gap: 20px;
             background: darkgrey;
-            color: white;
-            text-align: center;
-            padding: 8px;
-            font-size: 18px;
-            font-weight: bold;
-            position: fixed;
-            bottom: 0;
-            width: 100%;}
-              .nav-bar {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            background:darkgrey;
             padding: 1px;
         }
         .nav-bar a {
@@ -114,82 +60,129 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+        footer {
+            background: darkgrey;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .video-card {
+            width: 300px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+        .video-card iframe {
+            width: 100%;
+            height: 170px;
+        }
+        .video-card p {
+            padding: 10px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            margin-left: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
 
         @media (max-width: 768px) {
             .video-container {
                 flex-direction: column;
                 align-items: center;
             }
-             table {
-            width: 80%;
-            border-collapse: collapse;
-            margin: 20px auto;
-            text-align: center;
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin: 20px auto;
+                text-align: center;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 10px;
+            }
         }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-        }
-
-        }
-
     </style>
-    <script>
-        function goToFeedbackPage() {
-            window.location.href = 'feedback.html';
-        }
-        function searchFunction() {
-            let query = document.getElementById('search-input').value;
-            alert('You searched for: ' + query);
-        }
-    </script>
 </head>
 <body>
-    <header>
-        <div class="logo"><marquee> Ancient Diddlers </marquee></div>
-        
 
+    <header>
+        <div class="logo">
+            <marquee>Ancient Diddlers</marquee>
+        </div>
     </header>
+
     <nav class="nav-bar">
-        <a href="file:///C:/Users/DELL/Downloads/Home%20page.html"target="_self"">Home</a>
-        <a href="file:///C:/Users/DELL/Downloads/Bloopers%20(1).html"target="_self">Bloopers</a>
-        <a href="file:///C:/Users/DELL/Downloads/html%20tut.html"target="_self">HTML Tutorial</a>
+        <a href="file:///C:/Users/DELL/Downloads/Home%20page.html" target="_self">Home</a>
+        <a href="file:///C:/Users/DELL/Downloads/Bloopers%20(1).html" target="_self">Bloopers</a>
+        <a href="file:///C:/Users/DELL/Downloads/html%20tut.html" target="_self">HTML Tutorial</a>
     </nav>
 
-<table>
-    <div class="video-container">
-        <div class="video-card">
-             
-        <tr>
-            <th font bgcolor ="grey">Video Media Trivia</th>
-            <th font bgcolor ="grey">Audio Media Trivia</th>
-        </tr>
-        <tr>
-            <td>
-                <video width="450" height="250" controls>
-                    <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <br><br> <br><br><li>Description:Please provide the details</li>
-            </td>
-        </div>
+    <!-- Interactive Search Bar -->
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search for media...">
+        <button onclick="searchFunction()">Search</button>
+    </div>
 
-        <div class="video-card">
-              <td>
-                 <img src="image_blank_cover.png"width="450" height="250"><br>
-                <audio controls>
-
-                    <source src="audio.mp3" type="audio/mpeg">
-                    Your browser does not support the audio tag.
-                </audio>
-                <br><li>Description:Please provide the details</ul></li>
-            </td>
-        </tr>
-    </table>
-        </div>
-        
-    
-
-    <footer>
-        Copyright|&copy;|8-Mexico
-
+    <div class="container">
+        <table>
+            <tr>
+                <th bgcolor="grey">Video Media Trivia</th>
+                <th bgcolor="grey">Audio Media Trivia</th>
+            </tr>
+            <tr>
+                <td>
+                    <video width="450" height="250" controls>
+                        <source src="video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br><br>
+                    <ul>
+                        <li>Description: Please provide the details</li>
+                    </ul>
+                </td>
+                <td>
+                    <img src="image_blank_cover.png" width="450" height="250"><br>
+                    <audio

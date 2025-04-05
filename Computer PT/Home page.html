@@ -18,6 +18,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            width: 100%;
+            overflow: hidden; /* Ensure marquee doesn't overlap with other sections */
         }
         .logo {
             font-size: 24px;
@@ -65,6 +68,7 @@
             gap: 20px;
             padding: 20px;
             justify-content: center;
+            margin-top: 20px; /* Adds space between the marquee and the video section */
         }
         .video-card {
             width: 300px;
@@ -153,7 +157,7 @@
         <div class="logo">
             <!-- Adjusted marquee to span the full width and have continuous scrolling -->
             <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="50">
-                Ancient Diddlers 
+                Ancient Diddlers - Explore amazing trivia, videos, and more!
             </marquee>
         </div>
     </header>
